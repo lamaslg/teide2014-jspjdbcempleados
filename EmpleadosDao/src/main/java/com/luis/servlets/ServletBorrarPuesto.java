@@ -28,7 +28,7 @@ public class ServletBorrarPuesto extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		response.sendRedirect("/ServletListarPuesto");
+		response.sendRedirect("ServletListarPuesto");
 	}
 
 }
