@@ -9,11 +9,16 @@
 <title>Insert title here</title>
 </head>
 <body>
+<a href="alta.jsp">NuevoPuesto</a>
 <table>
 <c:forEach items="${puestos}" var="puesto">
 <tr>
 <td>
 ${puesto.nombre}
+</td>
+<td>
+<a href="ServletBorrarPuesto?id=${puesto.idPuesto}">Borrar</a>
+<a href="ServletModificarPuesto?id=${puesto.idPuesto}">Modificar</a>
 </td>
 </tr>
 

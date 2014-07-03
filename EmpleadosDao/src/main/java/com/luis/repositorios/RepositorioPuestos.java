@@ -83,7 +83,7 @@ PreparedStatement sentencia=conn.prepareStatement("insert into puesto (nombre) "
 	public int delete(int idPuesto) throws SQLException{
 		int n=0;
 		Connection conn=getConexion();
-PreparedStatement sentencia=conn.prepareStatement("delete puesto where idPuesto=?");
+PreparedStatement sentencia=conn.prepareStatement("delete from puesto where idPuesto=?");
 		sentencia.setInt(1, idPuesto);
 		
 		n=sentencia.executeUpdate();
